@@ -3,3 +3,6 @@ robots.txt
 # Allow all crawlers
 User-agent 
 Allow 
+
+
+https://sitecraft.se/sitemap.xml
