@@ -1513,6 +1513,9 @@
           }
         }
         function select(link) {
+          if (link.dataset && link.dataset.wfCurrentLocale) {
+            return;
+          }
           var href = designer && link.getAttribute("href-disabled") || link.getAttribute("href");
           tempLink.href = href;
           if (href.indexOf(":") >= 0) {
@@ -1541,6 +1544,9 @@
           var viewTop = $win.scrollTop();
           var viewHeight = $win.height();
           _.each(anchors, function(anchor) {
+            if (anchor.link[0] && anchor.link[0].dataset && anchor.link[0].dataset.wfCurrentLocale) {
+              return;
+            }
             var $link = anchor.link;
             var $section = anchor.sec;
             var top = $section.offset().top;
