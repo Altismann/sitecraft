@@ -215,7 +215,7 @@ a {
 .cf-58px-heading-2._3 {
   text-align: left;
   margin-bottom: 0;
-  line-height: 20%;
+  line-height: 1%;
 }
 
 .cf-hero-section-2 {
@@ -285,13 +285,15 @@ a {
 
 .efi-h2-2 {
   color: #fff;
-  text-align: right;
+  text-align: center;
   -webkit-text-stroke-color: #fff;
   background-image: linear-gradient(18deg, #e08ba9, #facba8 83%);
   margin-bottom: 0;
   padding: 20px 20px 20px 140px;
+  font-family: Montserrat, sans-serif;
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .efi-paragraph-3 {
@@ -557,6 +559,24 @@ a {
   font-family: Montserrat, sans-serif;
 }
 
+.bold-text-9 {
+  font-weight: 400;
+}
+
+.heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 58px;
+  font-weight: 200;
+  line-height: 60px;
+}
+
+.heading-2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .cf-hero-main-image-2 {
     margin-bottom: 0;
@@ -601,7 +621,13 @@ a {
     font-size: 50px;
   }
 
-  .efi-ft-09, .efi-ft-02 {
+  .efi-ft-09 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .efi-ft-02 {
+    background-color: #f3f3f3;
     padding-top: 10%;
     padding-bottom: 10%;
   }
@@ -613,6 +639,10 @@ a {
 
   .efi-hr-02 {
     padding-top: 0%;
+  }
+
+  .efi-ft-09-container {
+    margin-bottom: 100px;
   }
 
   .efi-ft-02-grid {
@@ -681,6 +711,10 @@ a {
     color: #fff;
     background-color: #a6b1bf;
   }
+
+  .section-12 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -693,7 +727,7 @@ a {
     align-items: flex-start;
     max-width: none;
     margin-top: 40px;
-    padding-left: 101px;
+    padding-left: 0;
   }
 
   .cf-top-left-contain-2 {
@@ -702,7 +736,8 @@ a {
 
   .cf-right-info-wrapper-2 {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 0;
   }
 
@@ -841,6 +876,7 @@ a {
     padding-top: 20px;
     padding-right: 0;
     font-weight: 200;
+    display: none;
   }
 
   .navbar-no-shadow {
